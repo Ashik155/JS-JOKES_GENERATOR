@@ -3,7 +3,7 @@ document.getElementById("btn").addEventListener("click", getjokes)
 function getjokes(e){
     const no = parseInt(document.getElementById("no").value)
     const xhr = new XMLHttpRequest();
-    xhr.open("GET",`http://api.icndb.com/jokes/random/${no}`,true)
+    xhr.open("GET",`https://api.icndb.com/jokes/random/${no}`,true)
     // xhr.onprogress = function(){
     //     const btn = document.getElementById('btn')
     //     const im = document.createElement('img')
